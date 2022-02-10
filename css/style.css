@@ -253,6 +253,10 @@ body {
   text-align: center;
 }
 
+.hero__img img {
+  width: 100%;
+}
+
 
 .hero__title {
   position: absolute;
@@ -298,17 +302,15 @@ body {
   .sidebar .container {
     width: 100%;
   }
-
-
-
 }
+
 
 
 /* ピックアップニュース */
 .pick-up {
   position: relative;
-  /* width: 100%; */
 }
+
 .pick-up__info {
   color: white;
   position: absolute;
@@ -334,7 +336,6 @@ body {
 
 @media (min-width: 900px) {
   .pick-up__img {
-    /* margin-top: 20px; */
     height: 466px;
   }
 
@@ -406,13 +407,23 @@ body {
   padding-bottom: 0.8rem;
 }
 
+.article__title-wrapper {
+  
+  padding-bottom: 30px;
+}
+
+@media (max-width: 899px) {
+  .article__title-wrapper {
+    margin-left: 20px;
+  }
+}
 @media (min-width: 900px) {
   .article--container {
     padding: 0;
     width: 100%;
   }
 
-  .artcle__info {
+  .article__info {
     width: 90%;
     margin: 0 auto;
   }
@@ -425,11 +436,11 @@ body {
     margin-bottom: 10%;
   }
 }
+  
 
 
 @media (min-width: 900px) {
-  
-  .artcile__list {
+  .article__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -443,6 +454,10 @@ body {
     height: 172px;
   }
 
+  .article__list article {
+    margin-bottom: 5%;
+  }
+
   .pc-big {
     width: 64%;
   }
@@ -454,7 +469,21 @@ body {
   .article__list article {
     margin-bottom: 5%;
   }
+}
 
+.all-article-link {
+  text-align: center;
+  margin: 10% 0;
+}
+
+.all-article-link a {
+  text-decoration: underline
+}
+
+@media(min-width: 900px) {
+  .all-article-link {
+    margin: 3% 0
+  }
 }
 
 /* 記事共通：すべての記事へのリンク */
@@ -618,11 +647,16 @@ body {
 .twitter-btn img {
   margin-right: 0.8rem;
   vertical-align: middle;
+  width: 10%;
 }
 
 @media (max-width: 899px) {
   .twitter-link {
     background-color: #525252;
+  }
+
+  .twitter-btn img {
+    width: 7%;
   }
 }
 
